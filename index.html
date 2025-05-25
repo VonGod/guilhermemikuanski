@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+  
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Portfólio - Guilherme Mikuanski</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- AOS Animation CSS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body { font-family: 'Raleway', sans-serif; }
   </style>
@@ -29,6 +33,7 @@
         <a href="#hero" class="text-gray-600 hover:text-blue-600 font-medium">Início</a>
         <a href="#about" class="text-gray-600 hover:text-blue-600 font-medium">Sobre Mim</a>
         <a href="#skills" class="text-gray-600 hover:text-blue-600 font-medium">Habilidades</a>
+        <a href="#results" class="text-gray-600 hover:text-blue-600 font-medium">Resultados</a>
         <a href="#resume" class="text-gray-600 hover:text-blue-600 font-medium">Experiências</a>
         <a href="#contact" class="text-gray-600 hover:text-blue-600 font-medium">Contato</a>
       </nav>
@@ -37,6 +42,7 @@
       <a href="#hero" class="block text-gray-600 hover:text-blue-600 font-medium">Início</a>
       <a href="#about" class="block text-gray-600 hover:text-blue-600 font-medium">Sobre Mim</a>
       <a href="#skills" class="block text-gray-600 hover:text-blue-600 font-medium">Habilidades</a>
+      <a href="#results" class="text-gray-600 hover:text-blue-600 font-medium">Resultados</a>
       <a href="#resume" class="block text-gray-600 hover:text-blue-600 font-medium">Experiências</a>
       <a href="#contact" class="block text-gray-600 hover:text-blue-600 font-medium">Contato</a>
     </div>
@@ -59,75 +65,118 @@
   </section>
 
   <!-- Sobre Mim -->
-  <section id="about" class="py-20 bg-white">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-800 mb-10">Sobre Mim</h2>
-      <div class="grid md:grid-cols-2 gap-10 items-center">
-        <img src="assets/img/perfil.jpg" alt="Foto Guilherme" class="rounded-lg shadow-lg w-full">
-        <div class="space-y-4 text-justify text-gray-700 text-base md:text-lg">
-          <p>Sou Guilherme, especialista em tráfego pago e automações para empresas...</p>
-          <p>Meu objetivo é somar conhecimento, tecnologia e estratégia...</p>
-          <div class="grid grid-cols-2 gap-4 mt-4 text-sm">
-            <p><strong>Aniversário:</strong> 14/06/2003</p>
-            <p><strong>Idade:</strong> 21</p>
-            <p><strong>Telefone:</strong> (45) 99929-8337</p>
-            <p><strong>Cidade:</strong> Santa Tereza do Oeste, PR</p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Habilidades -->
-  <section id="skills" class="py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-800 mb-10">Habilidades</h2>
-      <div class="space-y-6">
-        <div>
-          <label class="font-semibold text-gray-700">Meta for Business</label>
-          <div class="w-full bg-gray-300 rounded h-4 mt-1">
-            <div class="bg-blue-600 h-4 rounded" style="width: 98%"></div>
-          </div>
-        </div>
-        <div>
-          <label class="font-semibold text-gray-700">Google Ads</label>
-          <div class="w-full bg-gray-300 rounded h-4 mt-1">
-            <div class="bg-yellow-500 h-4 rounded" style="width: 85%"></div>
-          </div>
-        </div>
-        <div>
-          <label class="font-semibold text-gray-700">Automações (SDR, Closer, Atendimento)</label>
-          <div class="w-full bg-gray-300 rounded h-4 mt-1">
-            <div class="bg-green-500 h-4 rounded" style="width: 98%"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Experiências e Cursos -->
-<section id="resume" class="py-20 bg-white">
+<section id="about" class="py-20 bg-white">
   <div class="max-w-6xl mx-auto px-6">
-    <h2 class="text-3xl font-bold text-gray-800 mb-10">Experiências & Cursos</h2>
+    <h2 class="text-3xl font-bold text-gray-800 mb-10" data-aos="fade-up">Sobre Mim</h2>
+    <div class="grid md:grid-cols-2 gap-10 items-center" data-aos="fade-up" data-aos-delay="100">
+      <img src="assets/img/perfil.jpg" alt="Foto Guilherme" class="rounded-lg shadow-lg w-full" data-aos="zoom-in-right" data-aos-delay="200">
+      <div class="space-y-4 text-justify text-gray-700 text-base md:text-lg" data-aos="zoom-in-left" data-aos-delay="300">
+        <p>Sou Guilherme, especialista em tráfego pago e automações para empresas...</p>
+        <p>Meu objetivo é somar conhecimento, tecnologia e estratégia...</p>
+        <div class="grid grid-cols-2 gap-4 mt-4 text-sm" data-aos="fade-up" data-aos-delay="400">
+          <p><strong>Aniversário:</strong> 14/06/2003</p>
+          <p><strong>Idade:</strong> 21</p>
+          <p><strong>Telefone:</strong> (45) 99929-8337</p>
+          <p><strong>Cidade:</strong> Santa Tereza do Oeste, PR</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Habilidades -->
+<section id="skills" class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10" data-aos="fade-up">Habilidades</h2>
+    <div class="space-y-6" data-aos="fade-up" data-aos-delay="100">
+      <div data-aos="fade-up" data-aos-delay="200">
+        <label class="font-semibold text-gray-700">Meta for Business</label>
+        <div class="w-full bg-gray-300 rounded h-4 mt-1">
+          <div class="bg-blue-600 h-4 rounded" style="width: 98%"></div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="300">
+        <label class="font-semibold text-gray-700">Google Ads</label>
+        <div class="w-full bg-gray-300 rounded h-4 mt-1">
+          <div class="bg-yellow-500 h-4 rounded" style="width: 85%"></div>
+        </div>
+      </div>
+      <div data-aos="fade-up" data-aos-delay="400">
+        <label class="font-semibold text-gray-700">Automações (SDR, Closer, Atendimento)</label>
+        <div class="w-full bg-gray-300 rounded h-4 mt-1">
+          <div class="bg-green-500 h-4 rounded" style="width: 98%"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Resultados (já animado corretamente) -->
+<!-- Resultados -->
+<section id="results" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6 text-center">
+    <h2 class="text-3xl font-bold text-gray-800 mb-12" data-aos="fade-up">
+      📊 Resultados que entregam valor
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 place-items-center">
+
+      <!-- Leads -->
+      <div class="p-6 w-full max-w-[220px] border rounded-lg shadow hover:shadow-xl transition text-center" data-aos="fade-up" data-aos-delay="0">
+        <h3 class="text-4xl font-extrabold text-blue-600 mb-2">+12.000</h3>
+        <p class="text-gray-700 font-medium">Leads Gerados</p>
+      </div>
+
+      <!-- ROI -->
+      <div class="p-6 w-full max-w-[220px] border rounded-lg shadow hover:shadow-xl transition text-center" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-4xl font-extrabold text-green-500 mb-2">+420%</h3>
+        <p class="text-gray-700 font-medium">Retorno sobre Investimento (ROI)</p>
+      </div>
+
+      <!-- Clientes -->
+      <div class="p-6 w-full max-w-[220px] border rounded-lg shadow hover:shadow-xl transition text-center" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-4xl font-extrabold text-purple-600 mb-2">+55</h3>
+        <p class="text-gray-700 font-medium">Clientes Atendidos</p>
+      </div>
+
+      <!-- Vendas -->
+      <div class="p-6 w-full max-w-[220px] border rounded-lg shadow hover:shadow-xl transition text-center" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-3xl font-extrabold text-yellow-500 mb-2">R$ 14.000.000+</h3>
+        <p class="text-gray-700 font-medium">em Vendas Geradas</p>
+      </div>
+
+      <!-- IA -->
+      <div class="p-6 w-full max-w-[220px] border rounded-lg shadow hover:shadow-xl transition text-center" data-aos="fade-up" data-aos-delay="400">
+        <h3 class="text-3xl font-extrabold text-pink-500 mb-2">+ projetos</h3>
+        <p class="text-gray-700 font-medium">Integrações IA empresarias</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- Experiências e Cursos -->
+<section id="resume" class="py-20 bg-white">
+  <div class="max-w-6xl mx-auto px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10" data-aos="fade-up">Experiências & Cursos</h2>
     <div class="grid md:grid-cols-2 gap-10">
 
       <!-- Experiências -->
-      <div class="space-y-8">
-        <div class="border-l-4 border-blue-500 pl-4">
+      <div class="space-y-8" data-aos="fade-right">
+        <div class="border-l-4 border-blue-500 pl-4" data-aos="fade-up" data-aos-delay="100">
           <h3 class="text-xl font-semibold">Gestor de Tráfego / Automações</h3>
           <p class="text-sm text-gray-500 mb-2">2025 • Instituto Brasileiro de Energia Solar</p>
           <ul class="list-disc list-inside text-gray-700">
             <li>Gestor de tráfego, campanhas e automações.</li>
           </ul>
         </div>
-        <div class="border-l-4 border-blue-500 pl-4">
+        <div class="border-l-4 border-blue-500 pl-4" data-aos="fade-up" data-aos-delay="200">
           <h3 class="text-xl font-semibold">Gestor de Tráfego Pago</h3>
           <p class="text-sm text-gray-500 mb-2">2023 - 2024 • Instituto Veon</p>
           <ul class="list-disc list-inside text-gray-700">
             <li>Planejamento, execução e otimização de anúncios.</li>
           </ul>
         </div>
-        <div class="border-l-4 border-blue-500 pl-4">
+        <div class="border-l-4 border-blue-500 pl-4" data-aos="fade-up" data-aos-delay="300">
           <h3 class="text-xl font-semibold">Diretor de Artes</h3>
           <p class="text-sm text-gray-500 mb-2">2022 • Oeste Publicidades</p>
           <ul class="list-disc list-inside text-gray-700">
@@ -137,22 +186,22 @@
       </div>
 
       <!-- Cursos -->
-      <div class="space-y-8">
-        <div class="border-l-4 border-green-500 pl-4">
+      <div class="space-y-8" data-aos="fade-left">
+        <div class="border-l-4 border-green-500 pl-4" data-aos="fade-up" data-aos-delay="400">
           <h3 class="text-xl font-semibold">Tráfego Pago (Meta Ads) - Comunidade Sobral</h3>
           <p class="text-sm text-gray-500 mb-2">Certificado Oficial • 2024</p>
           <ul class="list-disc list-inside text-gray-700">
             <li>Campanhas, segmentação e estratégias em Meta Ads.</li>
           </ul>
         </div>
-        <div class="border-l-4 border-green-500 pl-4">
+        <div class="border-l-4 border-green-500 pl-4" data-aos="fade-up" data-aos-delay="500">
           <h3 class="text-xl font-semibold">Tráfego Pago (Google Ads) - Comunidade Sobral</h3>
           <p class="text-sm text-gray-500 mb-2">Certificado Oficial • 2024</p>
           <ul class="list-disc list-inside text-gray-700">
             <li>Rede de pesquisa, display, performance max e automações.</li>
           </ul>
         </div>
-        <div class="border-l-4 border-green-500 pl-4">
+        <div class="border-l-4 border-green-500 pl-4" data-aos="fade-up" data-aos-delay="600">
           <h3 class="text-xl font-semibold">Gestor de Automações - Automatick Labs</h3>
           <p class="text-sm text-gray-500 mb-2">Certificado • 2023</p>
           <ul class="list-disc list-inside text-gray-700">
@@ -165,23 +214,50 @@
   </div>
 </section>
 
+<!-- Contato -->
+<section id="contact" class="py-20 bg-gray-100">
+  <div class="max-w-6xl mx-auto px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold text-gray-800 mb-10">Contato</h2>
+    <div class="grid md:grid-cols-2 gap-8 text-gray-700" data-aos="zoom-in" data-aos-delay="100">
+      
+      <!-- Email -->
+      <div>
+        <h4 class="font-semibold flex items-center gap-2">
+          <i class="fas fa-envelope text-red-500"></i> Email
+        </h4>
+        <p>
+          <a href="mailto:contato.guilhermeantonyo@gmail.com" class="hover:underline">
+            contato.guilhermeantonyo@gmail.com
+          </a>
+        </p>
+      </div>
 
-  <!-- Contato -->
-  <section id="contact" class="py-20 bg-gray-100">
-    <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-3xl font-bold text-gray-800 mb-10">Contato</h2>
-      <div class="grid md:grid-cols-2 gap-8 text-gray-700">
-        <div>
-          <h4 class="font-semibold">Email</h4>
-          <p>contato.guilhermeantonyo@gmail.com</p>
-        </div>
-        <div>
-          <h4 class="font-semibold">WhatsApp</h4>
-          <p>(45) 99929-8337</p>
-        </div>
+      <!-- WhatsApp -->
+      <div>
+        <h4 class="font-semibold flex items-center gap-2">
+          <i class="fab fa-whatsapp text-green-500"></i> WhatsApp
+        </h4>
+        <p>
+          <a href="https://wa.me/5545999298337?text=Ol%C3%A1%20Guilherme%2C%20acabei%20de%20ver%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar%20com%20voc%C3%AA%20sobre%20um%20poss%C3%ADvel%20projeto." target="_blank" class="hover:underline">
+            (45) 99929-8337
+          </a>
+        </p>
       </div>
     </div>
-  </section>
+
+    <!-- Redes Sociais -->
+    <div class="mt-10 flex items-center gap-4" data-aos="fade-up" data-aos-delay="200">
+      <a href="https://instagram.com/seuusuario" target="_blank" aria-label="Instagram"
+         class="text-pink-500 hover:text-pink-600 text-2xl transition">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="https://facebook.com/seuusuario" target="_blank" aria-label="Facebook"
+         class="text-blue-600 hover:text-blue-700 text-2xl transition">
+        <i class="fab fa-facebook"></i>
+      </a>
+    </div>
+  </div>
+</section>
 
   <!-- Footer -->
   <footer class="text-center bg-white py-6 border-t mt-10">
@@ -230,6 +306,11 @@
       });
     });
   </script>
+<!-- AOS Script -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 
 </body>
 </html>
